@@ -323,7 +323,11 @@ section#featured {
   margin-left: 20px;
 }
 
-
+ul {
+  padding: none;
+  margin: none;
+  list-style-type: none;
+}
 
 
 li.residence-list,
