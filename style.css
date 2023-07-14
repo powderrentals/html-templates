@@ -123,12 +123,17 @@ Version: 1.2
   }
 
  /* navbar  */
-.text-white .nav-link.active, .text-white .nav-link:focus, .text-white, .nav-brand:hover, .nav-link:hover {
-    color: var(----body-text-color);
+ .brand {
+  padding-top: 5px;
+  font-size: 21px;
+  font-weight: 500;
+ }
+.text-white .nav-link.active, .text-white .nav-link:focus, .text-white, .nav-link:hover, .nav-brand:active,.nav-brand:hover, .nav-brand:visited, .nav-brand:focus {
+  color: var(--light-text-color);
 }
 
 .nav-link.active, .nav-link:focus, .nav-link:hover {
-  color: var(----body-text-color);
+  color: var(--light-text-color);
 }
 
 .nav-link {
@@ -289,12 +294,17 @@ Version: 1.2
    font-size: 26px;
  }
 
-section#residence {
+section#residence,
+section#featured {
   background-image : url(./images/residence.png) ;
   position: relative;
 }
 
-.swiper-button-next.residence-arrow,.swiper-button-prev.residence-arrow {
+.swiper-button-next.residence-arrow,
+.swiper-button-prev.residence-arrow,
+.swiper-button-next.featured-arrow,
+.swiper-button-prev.featured-arrow
+ {
   background: transparent;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -316,7 +326,9 @@ section#residence {
 
 
 
-li.residence-list {
+li.residence-list,
+
+li.featured-list {
   padding-right: 20px;
 }
 
@@ -370,7 +382,7 @@ section#footer {
 }
 
 .link-primary:hover {
-  color:var(--body-text-color)!important;
+  color:var(--light-text-color)!important;
 }
 
 footer.row {
@@ -406,7 +418,7 @@ a {
 }
 
 a:hover{
-  color: var(--body-text-color);
+  color: var(--light-text-color);
 }
 
 .post-item{
@@ -443,7 +455,7 @@ a:hover{
 }
 
 .btn-link, .btn-link:hover {
-  color: var(--body-text-color);
+  color: var(--light-text-color);
 }
 
 
@@ -489,7 +501,7 @@ a:hover{
 
 .nav-tabs {
   --bs-nav-tabs-border-width: none;
-  --bs-nav-tabs-link-active-color: none;
+  --bs-nav-tabs-link-active-color: var(--light-text-color);
   --bs-nav-tabs-link-active-bg: none;
     border-bottom: 1px solid var(--light-text-color);
 }
@@ -533,10 +545,10 @@ button.btn.btn-dark {
   border-radius: 8px;
 }
 
-.table-dark{
+.table-dark {
   --bs-table-border-color: none;
 }
 
-.bi{
+.bi {
   fill: #fff;
 }
